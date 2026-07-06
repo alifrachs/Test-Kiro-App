@@ -1,0 +1,16 @@
+{
+  "name": "club-soccer-website",
+  "version": "1.0.0",
+  "description": "Official club soccer profile website — HTML5, Tailwind CSS, Vanilla JS SPA",
+  "type": "module",
+  "scripts": {
+    "test": "vitest --run",
+    "test:coverage": "vitest --run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "^1.6.0",
+    "fast-check": "^3.19.0",
+    "jsdom": "^24.1.1",
+    "vitest": "^1.6.0"
+  }
+}

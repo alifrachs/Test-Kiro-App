@@ -1,0 +1,79 @@
+[
+  {
+    "id": "match-001",
+    "homeTeam": "FC Kiro",
+    "awayTeam": "Rival United",
+    "date": "2025-08-15",
+    "time": "19:00",
+    "venue": "Kiro Stadium, Main Arena",
+    "hasTicket": true,
+    "totalCapacity": 5000,
+    "reservedSeats": 1230
+  },
+  {
+    "id": "match-002",
+    "homeTeam": "FC Kiro",
+    "awayTeam": "Northern City FC",
+    "date": "2025-09-06",
+    "time": "15:30",
+    "venue": "Kiro Stadium, Main Arena",
+    "hasTicket": true,
+    "totalCapacity": 5000,
+    "reservedSeats": 870
+  },
+  {
+    "id": "match-003",
+    "homeTeam": "Eastern Wolves",
+    "awayTeam": "FC Kiro",
+    "date": "2025-10-18",
+    "time": "20:45",
+    "venue": "Wolves Ground, East District",
+    "hasTicket": true,
+    "totalCapacity": 3500,
+    "reservedSeats": 400
+  },
+  {
+    "id": "match-004",
+    "homeTeam": "FC Kiro",
+    "awayTeam": "Southern Rangers",
+    "date": "2025-11-22",
+    "time": "17:00",
+    "venue": "Kiro Stadium, Main Arena",
+    "hasTicket": true,
+    "totalCapacity": 5000,
+    "reservedSeats": 0
+  },
+  {
+    "id": "match-005",
+    "homeTeam": "FC Kiro",
+    "awayTeam": "Coastal FC",
+    "date": "2024-11-10",
+    "time": "14:00",
+    "venue": "Kiro Stadium, Main Arena",
+    "hasTicket": false,
+    "totalCapacity": 5000,
+    "reservedSeats": 3200
+  },
+  {
+    "id": "match-006",
+    "homeTeam": "Metro Athletic",
+    "awayTeam": "FC Kiro",
+    "date": "2025-02-28",
+    "time": "18:00",
+    "venue": "Metro Park Stadium",
+    "hasTicket": false,
+    "totalCapacity": 4000,
+    "reservedSeats": 3990
+  },
+  {
+    "id": "match-007",
+    "homeTeam": "FC Kiro",
+    "awayTeam": "Highland United",
+    "date": "2024-08-03",
+    "time": "16:00",
+    "venue": "Kiro Stadium, Main Arena",
+    "hasTicket": false,
+    "totalCapacity": 5000,
+    "reservedSeats": 4750
+  }
+]

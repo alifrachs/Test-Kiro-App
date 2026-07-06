@@ -1,0 +1,39 @@
+[
+  {
+    "id": "normal",
+    "name": "Normal",
+    "price": 50000,
+    "description": "Standard seating with great views of the pitch. Includes access to general concession stands.",
+    "benefits": [
+      "General seating area",
+      "Access to concession stands",
+      "Match day programme"
+    ]
+  },
+  {
+    "id": "vip",
+    "name": "VIP",
+    "price": 150000,
+    "description": "Premium experience with exclusive lounge access and priority entry to the stadium.",
+    "benefits": [
+      "Priority entry",
+      "Exclusive VIP lounge access",
+      "Complimentary food and drinks",
+      "Premium padded seating",
+      "Access to concession stands",
+      "Match day programme"
+    ]
+  },
+  {
+    "id": "kids",
+    "name": "Kids",
+    "price": 50000,
+    "description": "Discounted ticket for children under 12 years of age. Enjoy the match with the family!",
+    "benefits": [
+      "General seating area",
+      "Access to concession stands",
+      "Match day programme",
+      "Free club sticker pack"
+    ]
+  }
+]

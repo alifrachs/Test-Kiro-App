@@ -1,0 +1,20 @@
+[
+  {
+    "id": "coach-001",
+    "name": "Marco Rossi",
+    "role": "Head Coach",
+    "photoUrl": "/assets/images/coaches/coach-001.jpg"
+  },
+  {
+    "id": "coach-002",
+    "name": "David Laine",
+    "role": "Assistant Coach",
+    "photoUrl": "/assets/images/coaches/coach-002.jpg"
+  },
+  {
+    "id": "coach-003",
+    "name": "Sofia Andrade",
+    "role": "Goalkeeper Coach",
+    "photoUrl": ""
+  }
+]

@@ -1,0 +1,342 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Scaffold project structure and static assets": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345581613
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345601077
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346040450
+      }
+    ],
+    "2.1 Create `data/matches.json` with at least 6 match objects (mix of upcoming and past dates) conforming to the Match schema: `id`, `homeTeam`, `awayTeam`, `date` (YYYY-MM-DD), `time` (HH:MM), `venue`, `hasTicket`, `totalCapacity`, `reservedSeats`": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345582830
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345602670
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346042002
+      }
+    ],
+    "2.2 Create `data/ticketCategories.json` with exactly three objects: `id` ∈ `{normal, vip, kids}`, `name`, `price`, `description` (≤ 150 chars), `benefits`; enforce `normal.price ≤ vip.price` and `normal.price ≤ kids.price`; VIP must list ≥1 exclusive benefit; Kids description must reference \"under 12\"": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345582987
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345606116
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346044274
+      }
+    ],
+    "2.3 Create `data/players.json` with at least 11 player objects conforming to Player schema: `id`, `name`, `jerseyNumber` (1–99), `position` ∈ `{Goalkeeper, Defender, Midfielder, Forward}`, `photoUrl`; include at least one player with empty `photoUrl`": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345583270
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345606971
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346046199
+      }
+    ],
+    "2.4 Create `data/coaches.json` with at least 3 coach objects conforming to Coach schema: `id`, `name`, `role`, `photoUrl`; include at least one coach with empty `photoUrl`": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345583581
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345608429
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346047227
+      }
+    ],
+    "3.1 Implement `loadMatches()`, `loadPlayers()`, `loadCoaches()`, and `loadTicketCategories()` as async functions returning `{ ok: true, data }` on success and `{ ok: false, error }` on network or parse failure; wrap every `fetch()` in try/catch; check `res.ok` before parsing JSON": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345583790
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346053219
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346110040
+      }
+    ],
+    "4.1 Implement `formatDate(isoDate: string): string` — converts `YYYY-MM-DD` to `DD/MM/YYYY`; implement `formatTime(time: string): string` — returns HH:MM unchanged; implement `categorizeMatch(match, now): \"upcoming\" | \"past\"` — returns `\"upcoming\"` iff match date/time ≥ `now`; implement `sortMatches(matches): Match[]` — sorts by ascending date then ascending time as secondary key": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345583949
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346115519
+      }
+    ],
+    "4.4 Implement `validateEmail(value: string): string | null` — returns null for valid email format, non-empty error string otherwise; implement `validatePhone(value: string): string | null` — allows digits, spaces, hyphens, optional leading `+`, rejects all other characters; implement `validateForm(state): errors` — returns an errors object with non-null entries for every empty or invalid required field (`fullName`, `email`, `phone`, `selectedMatchId`, `selectedCategoryId`, `seats`)": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345584076
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346116985
+      }
+    ],
+    "4.8 Implement `calculateTotalPrice(category, seats): number` — returns `category.price * seats`": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345584207
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346117806
+      }
+    ],
+    "4.10 Implement `validateSeatsAvailability(requested: number, available: number): string | null` — returns non-empty error string if `requested > available`, null otherwise": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345584427
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346118966
+      }
+    ],
+    "4.12 Implement `groupPlayersByPosition(players: Player[]): { position: string, players: Player[] }[]` — returns groups in fixed order: Goalkeepers → Defenders → Midfielders → Forwards; every input player appears in exactly one group": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345584570
+      },
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346119920
+      }
+    ],
+    "5. Checkpoint — ensure data layer and utilities are solid": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345584725
+      }
+    ],
+    "6.1 Implement `renderNav(): string` — returns HTML for `<header>` containing `<nav aria-label=\"Main navigation\">` with four `<a>` links (`#home`, `#schedule`, `#tickets`, `#squad}`); on `lg:` screens render as horizontal row; on default/`md:` render behind a hamburger `<button aria-label=\"Toggle navigation\" aria-expanded=\"false\" aria-controls=\"nav-links\">`; `<ul id=\"nav-links\" role=\"list\">` starts with class `hidden` on mobile": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345584853
+      }
+    ],
+    "6.2 Implement `nav.setActiveRoute(hash: string): void` — iterates all nav `<a>` links and toggles `aria-current=\"page\"` plus the active indicator Tailwind class (`border-b-2 border-accent font-semibold`) onto the matching link and removes them from all others": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345585082
+      }
+    ],
+    "6.3 Implement hamburger toggle logic in `nav.js` — clicking the button toggles `#nav-links` between `hidden` and `flex flex-col`; update `aria-expanded` accordingly; pressing Escape closes the menu and returns focus to the hamburger button": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345585213
+      }
+    ],
+    "7.1 Implement `initRouter()` — registers `DOMContentLoaded` and `hashchange` listeners; on each event reads `window.location.hash`, normalises empty/unknown hash to `#home`, parses base route and query params (e.g. `#tickets?matchId=3` → base `\"tickets\"`, params `{ matchId: \"3\" }`), looks up the page module in the route registry, calls `page.render(container, params)`, calls `nav.setActiveRoute(base)`, and calls `document.getElementById('app').focus()` for keyboard focus management; unknown routes redirect to `#home`": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345585339
+      }
+    ],
+    "8.1 Implement `renderMatchCard(match: Match, hasTicket: boolean): string` — returns an `<article>` HTML string containing home team, away team, date formatted as DD/MM/YYYY, time as HH:MM, venue; applies upcoming/past visual style using `categorizeMatch`; renders `<a href=\"#tickets?matchId=[id]\">Buy Ticket</a>` when `hasTicket` is true and omits it when false": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345585472
+      }
+    ],
+    "9.1 Implement `ScheduleView.render(container, params)` — calls `loadMatches()`, handles `ok: false` by rendering a distinct error message (Req 2.6), handles empty array by rendering empty state message (Req 2.4), otherwise sorts matches via `sortMatches` and renders each using `renderMatchCard` inside a responsive grid (`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3`)": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345585595
+      }
+    ],
+    "10.1 Implement `renderTicketCard(category: TicketCategory, isSelected: boolean): string` — returns a `<button>` HTML string (keyboard-accessible) showing category name, price, and description (≤ 150 chars); applies active indicator class when `isSelected` is true; active class is mutually exclusive (only the selected card carries it)": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345585737
+      }
+    ],
+    "11.1 Implement `ReservationForm.init(container, params)` — initialises `ReservationState` with defaults; renders Step 1 (category selection using `renderTicketCard`); wires category card click handlers to update `selectedCategoryId` and re-render active state within 300ms (Req 3.2); stores state in module scope; if `params.matchId` is provided, pre-selects that match in Step 2": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345585869
+      }
+    ],
+    "11.2 Implement Step 1 → Step 2 transition — \"Continue\" button runs category validation; if no category selected renders inline error (Req 3.6) and halts; otherwise renders Step 2 booking form with fields: full name (max 100), email (max 254), phone (max 20), match dropdown, seats (min 1, max 10); displays running total price via `calculateTotalPrice` in `<span id=\"total-price\" aria-live=\"polite\">`; recalculates total on every `input` event on seats and on every category card click": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345586187
+      }
+    ],
+    "11.3 Implement form submission handler — runs `validateForm(state)` synchronously; if any errors, renders inline `<p role=\"alert\">` beside each invalid field and focuses first invalid field (Req 4.3); if all valid, calls `renderConfirmation` and displays the confirmation summary": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345586326
+      }
+    ],
+    "11.4 Implement `renderConfirmation(state, matches, categories): string` — returns HTML showing visitor name, selected match (formatted date/time and teams), ticket category name, number of seats, and total price; includes a \"Book Another Ticket\" button wired to `ReservationForm.reset()`": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345586459
+      }
+    ],
+    "11.5 Implement `ReservationForm.reset()` — resets `ReservationState` to all-default empty values, sets `confirmed` to false, and re-renders Step 1": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345586605
+      }
+    ],
+    "12. Checkpoint — ensure navigation, routing, schedule, and ticketing modules are working": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345586743
+      }
+    ],
+    "13.1 Implement `renderPlayerCard(player: Player): string` — returns an HTML card string containing player name, jersey number, position, and an `<img>` with `alt=\"[name], [position]\"`; uses `onerror` fallback to `/assets/images/placeholder-avatar.svg` with `this.onerror=null`; when `photoUrl` is empty, `src` is set directly to the placeholder": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345586865
+      }
+    ],
+    "14.1 Implement `renderCoachCard(coach: Coach): string` — returns HTML containing coach name, role, and `<img>` with `alt=\"[name], [role]\"`; same `onerror` fallback pattern as player card": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345587037
+      }
+    ],
+    "15.1 Implement `SquadView.render(container, params)` — calls `loadPlayers()` and `loadCoaches()` in parallel; renders Players section (`<section aria-labelledby>` with `<h2>`) before Coaches section; within Players, calls `groupPlayersByPosition` and renders each position group as `<section>` with `<h3>`; renders each player via `renderPlayerCard`; displays empty state message in players section if no players (Req 5.6); displays empty state in coaches section if no coaches (Req 5.7); handles load failure with distinct error message": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345587184
+      }
+    ],
+    "16.1 Implement `HomeView.render(container, params)` — renders a hero section (full-width, descriptive `alt` on hero image) and a feature highlights grid (`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3`) with at least three items linking to Schedule, Tickets, and Squad pages; all images have appropriate `alt` attributes per Req 6.2; uses semantic `<section>` elements with `aria-labelledby`": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345587317
+      }
+    ],
+    "17.1 Wire `main.js` to call `renderNav()` and inject result into `<header>`, then call `initRouter()` to start the SPA; ensure `nav.js` hamburger toggle event listeners are attached after nav HTML is inserted into the DOM": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345587550
+      }
+    ],
+    "18.1 Audit all `<img>` elements across rendered output to confirm: informational images have non-empty descriptive `alt`; decorative images have `alt=\"\"`; placeholder avatar `<img>` in cards has `alt=\"\"` (Req 6.2)": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345587777
+      }
+    ],
+    "18.2 Add `focus-visible:ring-2 focus-visible:ring-offset-2` Tailwind classes to all interactive elements (links, buttons, form inputs) to ensure keyboard focus indicator ≥ 2px (Req 6.5) while remaining hidden on pointer interaction (Req 6.6)": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345587910
+      }
+    ],
+    "18.3 Verify all Tailwind responsive classes ensure single-column layout at 320–767px (Req 6.7) and multi-column layout at 768–1279px (Req 6.8) by reviewing grid class declarations; fix any grids that would cause horizontal overflow on mobile": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345588037
+      }
+    ],
+    "19. Final checkpoint — full test suite green": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783345588177
+      }
+    ],
+    "2. Create static JSON data files": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346047367
+      }
+    ],
+    "3. Implement `js/data.js` — async fetch helpers": [
+      {
+        "executionId": "4c7ddc72-84b4-4e60-a168-61ff9e78fd05",
+        "chatSessionId": "sess_426f4d02-1cd1-4f1c-a2cc-069827478b02",
+        "timestamp": 1783346110217
+      }
+    ]
+  }
+}

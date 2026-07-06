@@ -1,0 +1,79 @@
+[
+  {
+    "id": "player-001",
+    "name": "Marco Rossi",
+    "jerseyNumber": 1,
+    "position": "Goalkeeper",
+    "photoUrl": "/assets/images/players/player-001.jpg"
+  },
+  {
+    "id": "player-002",
+    "name": "Luca Bianchi",
+    "jerseyNumber": 4,
+    "position": "Defender",
+    "photoUrl": "/assets/images/players/player-002.jpg"
+  },
+  {
+    "id": "player-003",
+    "name": "Carlos Mendez",
+    "jerseyNumber": 5,
+    "position": "Defender",
+    "photoUrl": "/assets/images/players/player-003.jpg"
+  },
+  {
+    "id": "player-004",
+    "name": "James Fletcher",
+    "jerseyNumber": 6,
+    "position": "Defender",
+    "photoUrl": "/assets/images/players/player-004.jpg"
+  },
+  {
+    "id": "player-005",
+    "name": "Ahmed Hassan",
+    "jerseyNumber": 3,
+    "position": "Defender",
+    "photoUrl": ""
+  },
+  {
+    "id": "player-006",
+    "name": "Yusuf Adeyemi",
+    "jerseyNumber": 8,
+    "position": "Midfielder",
+    "photoUrl": "/assets/images/players/player-006.jpg"
+  },
+  {
+    "id": "player-007",
+    "name": "Tomasz Kowalski",
+    "jerseyNumber": 10,
+    "position": "Midfielder",
+    "photoUrl": "/assets/images/players/player-007.jpg"
+  },
+  {
+    "id": "player-008",
+    "name": "Rafael Souza",
+    "jerseyNumber": 14,
+    "position": "Midfielder",
+    "photoUrl": "/assets/images/players/player-008.jpg"
+  },
+  {
+    "id": "player-009",
+    "name": "Kwame Asante",
+    "jerseyNumber": 9,
+    "position": "Forward",
+    "photoUrl": "/assets/images/players/player-009.jpg"
+  },
+  {
+    "id": "player-010",
+    "name": "Diego Vargas",
+    "jerseyNumber": 11,
+    "position": "Forward",
+    "photoUrl": "/assets/images/players/player-010.jpg"
+  },
+  {
+    "id": "player-011",
+    "name": "Erik Lindqvist",
+    "jerseyNumber": 7,
+    "position": "Forward",
+    "photoUrl": "/assets/images/players/player-011.jpg"
+  }
+]
